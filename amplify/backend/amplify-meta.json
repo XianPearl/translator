@@ -1,0 +1,74 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-languagetranslator-dev-fc8f0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::992382423025:role/amplify-languagetranslator-dev-fc8f0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::992382423025:role/amplify-languagetranslator-dev-fc8f0-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-languagetranslator-dev-fc8f0-deployment",
+      "UnauthRoleName": "amplify-languagetranslator-dev-fc8f0-unauthRole",
+      "StackName": "amplify-languagetranslator-dev-fc8f0",
+      "StackId": "arn:aws:cloudformation:ap-south-1:992382423025:stack/amplify-languagetranslator-dev-fc8f0/53ac62f0-3388-11ef-bf99-06e41e853a01",
+      "AmplifyAppId": "d3tpwhupag2ouq"
+    }
+  },
+  "auth": {
+    "languagetranslatorfdbef5b3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-languagetranslator-dev-fc8f0-deployment/amplify-cfn-templates/auth/languagetranslatorfdbef5b3-cloudformation-template.json",
+        "logicalId": "authlanguagetranslatorfdbef5b3"
+      },
+      "lastPushTimeStamp": "2024-06-26T06:55:20.916Z",
+      "output": {
+        "UserPoolId": "ap-south-1_P99Uw5m05",
+        "AppClientIDWeb": "116i8nt3drvakbvejsjlu3g0rm",
+        "AppClientID": "7r7q4bgrc296dvcg2cu6l7oit1",
+        "IdentityPoolId": "ap-south-1:78e049e8-a07d-476d-84bf-8c184eeb5c7e",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-south-1:992382423025:userpool/ap-south-1_P99Uw5m05",
+        "IdentityPoolName": "languagetranslatorfdbef5b3_identitypool_fdbef5b3__dev",
+        "UserPoolName": "languagetranslatorfdbef5b3_userpool_fdbef5b3"
+      },
+      "lastPushDirHash": "9xeoCZujjdtjSYwbl4zIPxU4nWI="
+    }
+  },
+  "predictions": {
+    "translateText2b0f69da": {
+      "providerPlugin": "awscloudformation",
+      "service": "Translate",
+      "convertType": "translateText",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-languagetranslator-dev-fc8f0-deployment/amplify-cfn-templates/predictions/translateText2b0f69da-template.json",
+        "logicalId": "predictionstranslateText2b0f69da"
+      },
+      "lastPushTimeStamp": "2024-06-26T06:55:20.916Z",
+      "output": {
+        "targetLang": "hi",
+        "sourceLang": "en",
+        "region": "ap-south-1"
+      },
+      "lastPushDirHash": "2fHGzZL+dzYS6JBn2pmC3h85+qw="
+    }
+  }
+}
